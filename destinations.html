@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Destinations - WanderWorld Travels | Explore Top Travel Destinations</title>
+  <meta name="description" content="Explore top travel destinations including Goa, Kerala, Rajasthan, Manali, Maldives, Paris, Dubai, and Japan. Find your perfect getaway with WanderWorld Travels.">
+  <meta name="keywords" content="travel destinations, Goa, Kerala, Rajasthan, Manali, Maldives, Paris, Dubai, Japan, best places to visit">
+  <meta name="author" content="WanderWorld Travels">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wanderworldtravels.com/destinations">
+  <meta property="og:title" content="Top Travel Destinations - WanderWorld Travels">
+  <meta property="og:description" content="Explore amazing travel destinations from beaches to mountains. Plan your dream vacation today.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200">
+
+  <link rel="canonical" href="https://www.wanderworldtravels.com/destinations">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Travel Destinations - WanderWorld Travels",
+    "description": "Explore top travel destinations including Goa, Kerala, Rajasthan, Manali, Maldives, Paris, Dubai, and Japan.",
+    "url": "https://www.wanderworldtravels.com/destinations",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Goa", "url": "https://www.wanderworldtravels.com/destinations#goa"},
+        {"@type": "ListItem", "position": 2, "name": "Kerala", "url": "https://www.wanderworldtravels.com/destinations#kerala"},
+        {"@type": "ListItem", "position": 3, "name": "Rajasthan", "url": "https://www.wanderworldtravels.com/destinations#rajasthan"},
+        {"@type": "ListItem", "position": 4, "name": "Manali", "url": "https://www.wanderworldtravels.com/destinations#manali"},
+        {"@type": "ListItem", "position": 5, "name": "Maldives", "url": "https://www.wanderworldtravels.com/destinations#maldives"},
+        {"@type": "ListItem", "position": 6, "name": "Paris", "url": "https://www.wanderworldtravels.com/destinations#paris"},
+        {"@type": "ListItem", "position": 7, "name": "Dubai", "url": "https://www.wanderworldtravels.com/destinations#dubai"},
+        {"@type": "ListItem", "position": 8, "name": "Japan", "url": "https://www.wanderworldtravels.com/destinations#japan"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon">&#127758;</span>
+        WanderWorld
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">&#9790;</button>
+        <a href="contact.html" class="nav-cta">Plan Trip</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=80" alt="Beautiful travel destination landscape" class="page-header-bg" loading="eager">
+    <div class="page-header-content">
+      <h1>Our Destinations</h1>
+      <p>Discover handpicked destinations that promise extraordinary experiences</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Destinations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar fade-in">
+        <label>Filter:</label>
+        <select id="filterCategory" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="beach">Beach</option>
+          <option value="mountain">Mountain</option>
+          <option value="heritage">Heritage</option>
+          <option value="international">International</option>
+        </select>
+        <select id="filterBudget" aria-label="Filter by budget">
+          <option value="all">All Budgets</option>
+          <option value="budget">Budget Friendly</option>
+          <option value="mid">Mid Range</option>
+          <option value="luxury">Luxury</option>
+        </select>
+        <input type="text" placeholder="Search destinations..." id="searchDestinations" aria-label="Search destinations">
+      </div>
+
+      <!-- Destinations Grid -->
+      <div class="destinations-grid" id="destinationsGrid">
+
+        <!-- Goa -->
+        <article class="destination-card fade-in" data-category="beach" data-budget="budget" data-name="Goa" id="goa">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" alt="Beautiful Goa beach with palm trees and golden sand at sunset" loading="lazy">
+            <span class="destination-card-badge">&#127796; Beach</span>
+            <span class="destination-card-price">From &#8377;12,999</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Goa</h3>
+            <div class="destination-card-location">&#128205; India</div>
+            <p>India's smallest state packs a big punch with pristine beaches, vibrant nightlife, Portuguese-era architecture, and mouth-watering seafood.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Oct - Mar</span>
+              <span>&#128176; &#8377;12,999+</span>
+              <span>&#11088; 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kerala -->
+        <article class="destination-card fade-in" data-category="beach" data-budget="mid" data-name="Kerala" id="kerala">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Kerala backwaters with traditional houseboat surrounded by coconut trees" loading="lazy">
+            <span class="destination-card-badge">&#127807; Nature</span>
+            <span class="destination-card-price">From &#8377;15,999</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Kerala</h3>
+            <div class="destination-card-location">&#128205; India</div>
+            <p>God's Own Country offers tranquil backwaters, misty hill stations, spice plantations, Ayurvedic retreats, and pristine coastline.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Sep - Mar</span>
+              <span>&#128176; &#8377;15,999+</span>
+              <span>&#11088; 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Rajasthan -->
+        <article class="destination-card fade-in" data-category="heritage" data-budget="mid" data-name="Rajasthan" id="rajasthan">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80" alt="Magnificent Rajasthan palace with intricate architecture and reflecting pool" loading="lazy">
+            <span class="destination-card-badge">&#127984; Heritage</span>
+            <span class="destination-card-price">From &#8377;18,999</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Rajasthan</h3>
+            <div class="destination-card-location">&#128205; India</div>
+            <p>Land of kings featuring majestic palaces, vibrant bazaars, camel safaris in the Thar Desert, and rich cultural heritage.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Oct - Mar</span>
+              <span>&#128176; &#8377;18,999+</span>
+              <span>&#11088; 4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Manali -->
+        <article class="destination-card fade-in" data-category="mountain" data-budget="budget" data-name="Manali" id="manali">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1597074866923-dc0589150a32?w=600&q=80" alt="Manali snow-capped mountains with pine trees and clear blue sky" loading="lazy">
+            <span class="destination-card-badge">&#10052; Mountain</span>
+            <span class="destination-card-price">From &#8377;14,999</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Manali</h3>
+            <div class="destination-card-location">&#128205; India</div>
+            <p>A breathtaking hill station offering snow-capped peaks, thrilling adventure sports, ancient temples, and scenic valleys.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Mar - Jun</span>
+              <span>&#128176; &#8377;14,999+</span>
+              <span>&#11088; 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Maldives -->
+        <article class="destination-card fade-in" data-category="beach" data-budget="luxury" data-name="Maldives" id="maldives">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80" alt="Maldives overwater villas with crystal clear turquoise water" loading="lazy">
+            <span class="destination-card-badge">&#127796; Luxury</span>
+            <span class="destination-card-price">From &#8377;89,999</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Maldives</h3>
+            <div class="destination-card-location">&#128205; Indian Ocean</div>
+            <p>Paradise on Earth with overwater villas, crystal-clear lagoons, vibrant coral reefs, and world-class luxury resorts.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Nov - Apr</span>
+              <span>&#128176; &#8377;89,999+</span>
+              <span>&#11088; 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paris -->
+        <article class="destination-card fade-in" data-category="international" data-budget="luxury" data-name="Paris" id="paris">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" alt="Eiffel Tower in Paris at golden hour with Seine river" loading="lazy">
+            <span class="destination-card-badge">&#127467;&#127479; International</span>
+            <span class="destination-card-price">From &#8377;75,000</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Paris</h3>
+            <div class="destination-card-location">&#128205; France</div>
+            <p>The City of Light enchants with iconic landmarks, world-class museums, exquisite cuisine, and timeless romance.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Apr - Jun</span>
+              <span>&#128176; &#8377;75,000+</span>
+              <span>&#11088; 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dubai -->
+        <article class="destination-card fade-in" data-category="international" data-budget="luxury" data-name="Dubai" id="dubai">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai skyline with Burj Khalifa and modern architecture" loading="lazy">
+            <span class="destination-card-badge">&#127961; City</span>
+            <span class="destination-card-price">From &#8377;55,000</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Dubai</h3>
+            <div class="destination-card-location">&#128205; UAE</div>
+            <p>A futuristic marvel with the world's tallest building, luxury shopping, desert adventures, and stunning artificial islands.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Oct - Apr</span>
+              <span>&#128176; &#8377;55,000+</span>
+              <span>&#11088; 4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Japan -->
+        <article class="destination-card fade-in" data-category="international" data-budget="mid" data-name="Japan" id="japan">
+          <div class="destination-card-image">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Traditional Japanese temple with cherry blossoms and Mount Fuji" loading="lazy">
+            <span class="destination-card-badge">&#127471;&#127477; International</span>
+            <span class="destination-card-price">From &#8377;65,000</span>
+          </div>
+          <div class="destination-card-content">
+            <h3>Japan</h3>
+            <div class="destination-card-location">&#128205; Japan</div>
+            <p>A mesmerizing blend of ancient traditions and cutting-edge technology, featuring temples, cherry blossoms, and world-class cuisine.</p>
+            <div class="destination-card-meta">
+              <span>&#128197; Mar - May</span>
+              <span>&#128176; &#8377;65,000+</span>
+              <span>&#11088; 4.9</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div id="noResults" style="display: none; text-align: center; padding: 60px 0;">
+        <h3>No destinations found</h3>
+        <p>Try adjusting your filters or search term.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label" style="background: rgba(255,255,255,0.2); color: #fff;">Stay Connected</span>
+        <h2>Subscribe To Our Newsletter</h2>
+        <p>Get exclusive travel deals and destination guides delivered to your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" aria-label="Email for newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="nav-logo-icon">&#127758;</span>
+            WanderWorld
+          </a>
+          <p>Inspiring journeys and unforgettable travel experiences since 2015. We craft personalized adventures that create beautiful memories across the globe.</p>
+          <div class="social-links">
+            <a href="#" class="social-link facebook" aria-label="Facebook">f</a>
+            <a href="#" class="social-link twitter" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="social-link instagram" aria-label="Instagram">&#9679;</a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="blog.html">Travel Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Top Destinations</h4>
+          <ul>
+            <li><a href="#goa">Goa</a></li>
+            <li><a href="#kerala">Kerala</a></li>
+            <li><a href="#rajasthan">Rajasthan</a></li>
+            <li><a href="#manali">Manali</a></li>
+            <li><a href="#maldives">Maldives</a></li>
+            <li><a href="#paris">Paris</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item">
+            <span>&#128205;</span>
+            <p>123 Travel Avenue, New Delhi, India 110001</p>
+          </div>
+          <div class="footer-contact-item">
+            <span>&#128222;</span>
+            <p>+91-9876543210</p>
+          </div>
+          <div class="footer-contact-item">
+            <span>&#128231;</span>
+            <p>hello@wanderworldtravels.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 WanderWorld Travels. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919876543210?text=Hi!%20I%20need%20help%20planning%20my%20trip." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">&#128172;</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

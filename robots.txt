@@ -1,14 +1,10 @@
 # WanderWorld Travels - Robots.txt
-# https://www.wanderworldtravels.com
+# https://website-practice-fawn.vercel.app
 
 User-agent: *
 Allow: /
 
-Sitemap: https://www.wanderworldtravels.com/sitemap.xml
-
-# Disallow admin areas (if any)
 Disallow: /admin/
 Disallow: /cgi-bin/
 
-# Crawl-delay for polite bots
-# Crawl-delay: 10
+Sitemap: https://website-practice-fawn.vercel.app/sitemap.xml
